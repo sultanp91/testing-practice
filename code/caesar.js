@@ -1,5 +1,6 @@
-export default function caesarCipher(str, num) {
+export default function caesarCipher(str, number) {
     let newStr = "";
+    let num = number % 26;
     let lowerCaseStr = str.toLowerCase()
     const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
     for(let i = 0; i < lowerCaseStr.length; i++){
